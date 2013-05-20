@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Symcode_PageLinks>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Symcode_PageLinks>
+    </modules>
+</config>
