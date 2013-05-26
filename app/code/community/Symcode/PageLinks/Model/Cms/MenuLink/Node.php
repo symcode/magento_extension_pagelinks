@@ -60,7 +60,7 @@ class Symcode_PageLinks_Model_Cms_MenuLink_Node extends Mage_Core_Model_Abstract
     {
         $nodes      = array();
         
-		$collection = Mage::getSingleton('pageLinks/cms_pageLink')->getResourceCollection();
+		$collection = Mage::getModel('pageLinks/cms_pageLink')->getResourceCollection();
         /* @var $collection Symcode_PageLinks_Model_Mysql4_Cms_PageLink_Collection */
 
 		$collection->loadLinksByArea('top_menu');

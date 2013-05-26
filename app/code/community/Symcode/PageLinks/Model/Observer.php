@@ -117,7 +117,7 @@ class Symcode_PageLinks_Model_Observer extends Mage_Core_Model_Abstract
         // only execute the script if current block is toplinks or footer links
 		if($blockName == 'top.links' || $blockName == 'footer_links')
 		{
-			$collection = Mage::getSingleton('pageLinks/cms_pageLink')->getResourceCollection();
+			$collection = Mage::getModel('pageLinks/cms_pageLink')->getResourceCollection();
             /* @var $collection Symcode_PageLinks_Model_Mysql4_Cms_PageLink_Collection */
             
             // set internal name by block name

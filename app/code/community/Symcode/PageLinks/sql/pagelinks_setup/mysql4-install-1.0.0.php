@@ -47,6 +47,8 @@ $table = $installer->getConnection()
         ),
         array('page_id'),
         array('type' => Varien_Db_Adapter_Interface::INDEX_TYPE_UNIQUE))
+    ->addIndex($installer->getIdxName('pageLinks/cms_pageLink', array('show_link')),
+        array('show_link'))
     ->addForeignKey(
         $installer->getFkName(
             array('cms/page', 'int'),

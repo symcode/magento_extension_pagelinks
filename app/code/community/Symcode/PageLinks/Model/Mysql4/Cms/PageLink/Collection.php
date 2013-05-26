@@ -55,6 +55,8 @@ class Symcode_PageLinks_Model_Mysql4_Cms_PageLink_Collection extends Mage_Core_M
 		
 		$this->addFieldToFilter('show_link', $area);
 		
+		$this->load();
+		
 		return $this;
 	}
 }
